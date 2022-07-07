@@ -1,0 +1,41 @@
+body{
+    background: radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #DB00FF 0%, #000000 100%), linear-gradient(45deg, #241E92 0%, #241E92 40%, #5432D3 40%, #5432D3 50%, #7B6CF6 50%, #7B6CF6 70%, #E5A5FF 70%, #E5A5FF 100%), linear-gradient(180deg, #01024E 0%, #01024E 43%, #543864 43%, #543864 62%, #8B4367 62%, #8B4367 80%, #FF6464 80%, #FF6464 100%);
+background-blend-mode: overlay, hard-light, overlay, normal;
+color: white;
+font-family: cursive;
+}
+#camera{
+    border: 2px dotted white;
+    width: 350px;
+    height: 300px;
+    
+}
+.heading{
+   
+font-size: 6em;
+text-shadow: 0 0 20px cyan;
+}
+
+.heading::after{
+    content: attr(Facial);
+    
+    z-index: -1;
+    color: cyan;
+    filter: blur(15px);
+
+
+}
+.heading::before{
+    content: '';
+    position: absolute;
+   
+    width: 40%;
+    height: 10%;
+    background: rgb(182, 246, 255);
+    z-index: -2;
+    opacity: 1;
+    filter: blur(40px);
+
+}
+
+
